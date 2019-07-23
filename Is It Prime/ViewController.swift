@@ -9,12 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var inputField: UITextField!
+    @IBOutlet weak var requestLabel: UILabel!
+    @IBOutlet weak var primeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func calculateTapped(_ sender: Any) {
+        var i = 2
+        var isPrime = true
+        
+        if Int(inputField.text!) != nil {
+            
+        } else {
+            requestLabel.text = "Needs to be a positive whole number..."
+            primeLabel.text = ""
+        }
+        self.view.endEditing(true)
+    }
 
 }
 
