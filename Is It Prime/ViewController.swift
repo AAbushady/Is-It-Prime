@@ -35,6 +35,7 @@ class ViewController: UIViewController {
                 i += 1
             }
             requestLabel.text = "The Result Is..."
+            requestLabel.textColor = UIColor.black
             if isPrime {
                 primeLabel.text = "PRIME!!!"
                 primeLabel.textColor = UIColor.green
